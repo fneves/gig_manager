@@ -38,3 +38,30 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bundler'
+
+gem 'google-analytics-rails'
+gem 'devise', github: 'plataformatec/devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'simple_form'
+gem 'acts_as_votable', github: 'ryanto/acts_as_votable'
+gem 'binding_of_caller'
+gem 'validates_formatting_of'
+gem 'tzinfo-data'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'pry-rails'
+end
